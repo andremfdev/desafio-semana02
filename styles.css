@@ -9,6 +9,13 @@
   width: 100%;
 }
 
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
 body {
   background-color: #f4f4f4;
   color: #333;
@@ -28,11 +35,22 @@ body {
 
 h1 {
   font-size: 1.8rem;
-  color: #03543b;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem; /* Reduz o tamanho da fonte em telas menores */
+  }
 }
 
 p {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte em telas menores */
+  }
 }
 
 .description-about {
@@ -65,6 +83,13 @@ section {
   gap: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .card-projects p,
+  a {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte em telas menores */
+  }
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -81,4 +106,22 @@ section {
   list-style-type: none;
   padding: 0;
   gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .skills p,
+  li {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte em telas menores */
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
 }
