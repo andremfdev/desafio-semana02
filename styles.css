@@ -89,6 +89,7 @@ section {
 .card-project02,
 .card-project03 {
   margin-bottom: 1rem; /* Adiciona um espaçamento inferior */
+  padding: 1rem;
   font-size: 1rem; /* Aumenta o tamanho da fonte */
   text-align: center; /* Centraliza o texto */
   display: flex; /* Alinha o texto no centro */
@@ -99,6 +100,17 @@ section {
   height: 20rem;
   background-color: rgb(189, 184, 181);
   border-radius: 0.2rem;
+  border: 1px solid #433f3f; /* Adiciona uma borda ao redor dos cards */
+  transition: 0.4s; /* Adiciona uma transição suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao card */
+}
+
+.card-project01:hover,
+.card-project02:hover,
+.card-project03:hover {
+  background-color: #007bff; /* Altera a cor de fundo ao passar o mouse */
+  color: white; /* Altera a cor do texto ao passar o mouse */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
 
 .projects {
